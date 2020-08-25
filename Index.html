@@ -19,6 +19,10 @@
     <!--Custom Css File-->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!--responsive Css File-->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+
     
 </head>
 <body>
@@ -28,7 +32,7 @@
     <header class="header-area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="Index.html"><img src="./imgs/Banner.png" alt="logo"></a>
+                <a class="navbar-brand" href="#banner"><img src="./imgs/Banner.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,19 +40,19 @@
                     <div class="mr-auto"></div>
                   <ul class="navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Projects</a>
+                      <a class="nav-link" href="#project">Projects</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Skills</a>
+                      <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -61,7 +65,7 @@
     <main class="site-main">
 
       <!--######################### Start Banner Area ######################### -->
-      <section class="site-banner">
+      <section class="site-banner" id="banner">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 site-title"> 
@@ -70,8 +74,13 @@
             <h4 class="title-text text-uppercase">Glasgow Caledonian Graduate.</h4>
             <div class="site-buttons">
               <div class="d-flex flex-row flex-wrap">
-                <button type="button" class="btn button primary-button mr-4 text-uppercase">Contact</button>
-                <button type="button" class="btn button secondary-button text-uppercase">get CV</button>
+                
+                <a href="#contact">
+                  <button type="button" class="btn button primary-button mr-4 text-uppercase">Contact</button>
+                </a>
+                <a href="Marc Leese CV.pdf" download="">
+                  <button class="btn button secondary-button text-uppercase" >Get CV</button>
+              </a>
               </div>
             </div>
           </div>
@@ -83,7 +92,7 @@
       </section>
       <!--######################### End Banner Area ######################### -->
       <!--######################### Start About Area ######################### -->
-        <section class="about-area">
+        <section class="about-area" id="about">
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-6 col-md-12">
@@ -109,14 +118,16 @@
 
                   </p>
                 </div>
-                <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+                <a href="Marc Leese CV.pdf" download="">
+                  <button class="btn button primary-button text-uppercase">Download CV</button>
+              </a>
               </div>
             </div>
           </div>
         </section>
       <!--######################### End About Area ######################### -->
       <!--######################### Start Projects Area ######################### -->
-          <section class="project-area">
+          <section class="project-area" id="project">
             <div class="container">
               <div class="project-title pb-5">
                 <h1 class="text-uppercase title-h1">Completed Projects</h1>
@@ -319,7 +330,7 @@
       <!--######################### End Projects Area ######################### -->  
  
       <!--######################### Start Skills Area Area ######################### --> 
-      <section class="skills-area">
+      <section class="skills-area" id="skills">
         <div class="container">
           <div class="row"><div class="col-lg-12 text-center skills-title">
             <h1 class="text-uppercase title-text">Skills</h1>
@@ -328,6 +339,94 @@
             </p>
           </div>
         </div>
+        <div class="container skills-list">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="skill">
+                      <div class="skill-img text-center py-4">
+                        <span><i class="fab fa-python fa-6x px-6"></i></span>
+                      </div>
+                      <div class="card-body text-center">
+                          <h5 class="card-title text-uppercase font-open_sans">Python</h5>
+                          <p class="card-text text-secondary">
+                              I have developed multiple Projects using python and its libraries.
+                              Including machine learning agents.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="skill">
+                    <div class="sevices-img text-center py-4">
+                        <span><i class="fab fa-java fa-6x px-6"></i></span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase font-open_sans">Java</h5>
+                        <p class="card-text text-secondary">
+                            I have used java for android development and for web development using Spring.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="skill">
+                  <div class="sevices-img text-center py-4">
+                    <span><i class="fas fa-code fa-6x px-6"></i></span>
+                  </div>
+                  <div class="card-body text-center">
+                      <h5 class="card-title text-uppercase font-open_sans">C#</h5>
+                      <p class="card-text text-secondary">
+                          I have used C# mostly for web development projects using ASP.net MVC.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="skill">
+                <div class="sevices-img text-center py-4">
+                  <span><i class="fab fa-html5 fa-6x px-6"></i></span>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title text-uppercase font-open_sans">HTML5</h5>
+                    <p class="card-text text-secondary">
+                        Some quick example text to build on the card
+                        title and make up
+                        the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="skill">
+              <div class="sevices-img text-center py-4">
+                <span><i class="fab fa-css3-alt fa-6x px-6"></i></span>
+              </div>
+              <div class="card-body text-center">
+                  <h5 class="card-title text-uppercase font-open_sans">CSS3</h5>
+                  <p class="card-text text-secondary">
+                      Some quick example text to build on the card
+                      title and make up
+                      the bulk of the card's content.
+                  </p>
+              </div>
+          </div>
+
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="skill">
+            <div class="sevices-img text-center py-4">
+              <span><i class="fas fa-database fa-6x px-6"></i></span>
+            </div>
+            <div class="card-body text-center">
+                <h5 class="card-title text-uppercase font-open_sans">MySQL/MongoDB</h5>
+                <p class="card-text text-secondary">
+                    Some quick example text to build on the card
+                    title and make up
+                    the bulk of the card's content.
+                </p>
+            </div>
+        </div>
+    </div>
         </div>
       </section>
       <!--######################### End Skills Area ######################### --> 
@@ -335,6 +434,31 @@
     </main>
 
     <!--######################### End Main Area ######################### -->
+
+    <!--######################### Footer Area ######################### -->
+
+    <footer class="footer-area">
+      <div class="container">
+          <div class="" id="contact">
+              <div class="site-logo text-center py-4">
+                  <a href="#"><img src="./imgs/Banner.png" alt="logo"></a>
+              </div>
+              <div class="social text-center">
+                  <h5 class="text-uppercase">Contact Me</h5>
+                  <a href="mailto:marcleese3@gmail.com"><i class="fas fa-envelope"></i></a>
+                  <a href="https://github.com/Marcleese1?tab=repositories"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/marc-leese-0823ba106/"><i class="fab fa-linkedin"></i></a>
+                  <a href="tel:07508577993"><i class="fas fa-phone-alt"></i></a>
+              </div>
+              <div class="copyrights text-center">
+                  <p class="para">
+                      Copyright ©2019 All rights reserved | This template is by
+                      <a href="https://www.linkedin.com/in/marc-leese-0823ba106/"><span style="color: var(--primary-color);">Marc Leese</span></a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
 
 
     <!-- Jquery js file -->

@@ -113,8 +113,33 @@
     font:normal 700 25px/12px var(--open_sans);
 }
 
-/*.site-main .project-area .grid .our-project .img img:hover img{
-    filter:brightness(1.1) drop-shadow(1px 8px 30px #b1afaf)
-}*/
+/* skills area */
+
+.site-main .skills-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .skills-area .skills-title{
+    padding: 0 14rem;
+}
+
+.site-main .skills-area .skills-title h1{
+    font-size: 50px;
+}
+
+.site-main > .skills-area .skill{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 2.2rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .skills-area .skill:hover{
+    box-shadow: var(--box-shadow2);
+}
+
+
+/* End skills area */
 /* End Projects Area */
 
