@@ -6,15 +6,20 @@
     <title>Marc Leese | Developer</title>
     <link rel="shortcut icon" href="./imgs/favicon.png">
 
-
+    
     <!--Bootstrap Css File-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- font awesome icons -->
     <link rel="stylesheet" href="./css/all.min.css">
 
+    <!-- Magnific Popup css -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
     <!--Custom Css File-->
     <link rel="stylesheet" href="./css/style.css">
+
+    
 </head>
 <body>
 
@@ -75,8 +80,6 @@
             </div>
           </div>
         </div>
-        <a href='https://www.freepik.com/vectors/people'>People vector created by freepik - www.freepik.com</a>
-        <a href="https://www.freepik.com/vectors/business">Business vector created by freepik - www.freepik.com</a>
       </section>
       <!--######################### End Banner Area ######################### -->
       <!--######################### Start About Area ######################### -->
@@ -117,10 +120,10 @@
             <div class="container">
               <div class="project-title pb-5">
                 <h1 class="text-uppercase title-h1">Completed Projects</h1>
-                <h1 class="text-uppercase title-h1">Quality Work</h1>
+                <h1 class="text-uppercase title-h1">Previous Work</h1>
               </div>
               <div class="button-group">
-                <button type="button" class="active">All</button>
+                <button type="button" class="active" id="btn1">All</button>
                 <button type="button" data-filter=".Python">Python</button>
                 <button type="button" data-filter=".java">Java</button>
                 <button type="button" data-filter=".c">C#</button>
@@ -134,7 +137,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item Python">
                   <div class="our-project">
                     <div class="img">
-                      <img src="./imgs/portfolio/Honors Project.png" alt="portfolio1">
+                        <img src="./imgs/portfolio/Honors Project.png" alt="portfolio1">
                     </div>
                   </div>
                     <div class="title py-4">
@@ -175,7 +178,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item Python">
                   <div class="our-project">
-                    <div class="img">
+                    <div class="img"> 
                       <img src="./imgs/portfolio/Walton.png" alt="portfoli3">
                     </div>
                   </div>
@@ -183,6 +186,10 @@
                         <h4 class="text-uppercase">Walton Happy Travels</h4>
                         <p class="para">
                           This project was submitted as my final project for my HND. 
+                          It is a booking system that allows users to book holidays using the premade packages
+                          and allows them to pay using the stripe API.
+                          It was developed using Python and the web framework django. This was 
+                          the first project I ever created using the language and framework.
                         </p>
                         <p class="para">
                           Github: 
@@ -201,7 +208,10 @@
                     <div class="title py-4">
                         <h4 class="text-uppercase">Tmpst</h4>
                         <p class="para">
-                          test
+                          Tmpst was developed using ASP.net and is an API reader.
+                          The project was developed as a team for the university module 
+                          Integrated Project 3. The project received the highest mark in the year (90%)
+                          for the design of the site aswell as user friendlyness.
                         </p>
                         <p class="para">
                           Github: 
@@ -219,7 +229,9 @@
                   <div class="title py-4">
                       <h4 class="text-uppercase">Entrantra RPG</h4>
                       <p class="para">
-                        test
+                        Using the unreal game engine and c++ myself and a couple of friends are 
+                        creating a role playing game. This is the first time any of us have used the unreal engine and
+                        we are trying to make sure we cover all of the basics as well as some intermediate stuff while the game is in development.
                       </p>
                       <p class="para">
                         Github: 
@@ -237,7 +249,9 @@
                 <div class="title py-4">
                     <h4 class="text-uppercase">SmidgeOS</h4>
                     <p class="para">
-                      test
+                      This is an operating system I will begin to develop. Curently it is in the planning stage and 
+                      I am still trying to figure out all of the logistics and develop the skills that will be required for it to be 
+                      a success. This will be developed using asembly and C
                     </p>
                     <span class="text-secondary">Upcoming, Other, Portfolio</span>
                   </div>
@@ -251,16 +265,72 @@
               <div class="title py-4">
                   <h4 class="text-uppercase">Twitch Channel website</h4>
                   <p class="para">
-                    test
+                    This website is currently in planning stages but will be using the twitch APi, youtube API and twitter API.
+                    I will be using it to keep viewers of my channels up to date with ease so it means they do not need to go to different
+                    websites to see what I have been up to or if I have posted a video somewhere or if i am live. This site will be developed using C#
+
                   </p>
                   <span class="text-secondary">Upcoming, Portfolio</span>
                 </div>
         </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item java">
+          <div class="our-project">
+            <div class="img">
+              <img src="./imgs/portfolio/javarss.png" alt="portfolio8">
+            </div>
+          </div>
+            <div class="title py-4">
+                <h4 class="text-uppercase">Rss Reader Android</h4>
+                <p class="para">
+                  A coursework for a module in university called mobile technologies. 
+                  The task was to create an app that read the RSS feed from traffic scotland and showed 
+                  information based off of the categories you where querying. It also allows you to use google maps and see 
+                  where roadworks where taking place and changed the colour of the marker on the map depending how long
+                  they had left untill completion. developed using Android studio.
+                </p>
+                <p class="para">Github:
+                  <a href="https://github.com/Marcleese1/RSSReaderAndroid">Rss Reader</a>
+                </p>
+                <span class="text-secondary">Java, Portfolio</span>
+              </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item web">
+        <div class="our-project">
+          <div class="img">
+            <img src="./imgs/portfolio/portfoliosite.png" alt="portfolio9">
+          </div>
+        </div>
+          <div class="title py-4">
+              <h4 class="text-uppercase">Port Folio Website</h4>
+              <p class="para">
+                Website where I show off some of the previous, in progress or upcoming work.
+                Feel free to use the template (it will have no images or names anywhere all you have
+                to do is add them). Developed using HTML/CSS & Bootstrap. 
+              </p>
+              <p class="para">Github:
+                <a href="https://github.com/Marcleese1/RSSReaderAndroid">CHANGE LINK</a>
+              </p>
+              <span class="text-secondary">HTML/CSS, Portfolio</span>
+            </div>
+    </div>
             </div>
           </section>
 
-      <!--######################### End Projects Area ######################### -->
-
+      <!--######################### End Projects Area ######################### -->  
+ 
+      <!--######################### Start Skills Area Area ######################### --> 
+      <section class="skills-area">
+        <div class="container">
+          <div class="row"><div class="col-lg-12 text-center skills-title">
+            <h1 class="text-uppercase title-text">Skills</h1>
+            <p class="para">
+              These are the skills I have aquired over the years through college univeristy and from self teaching.
+            </p>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!--######################### End Skills Area ######################### --> 
 
     </main>
 
@@ -275,6 +345,9 @@
 
     <!-- isotope js library-->
     <script src="./vendor/istope/isotope.min.js"></script>
+
+    <!-- Magnific Popup script -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
 
     <!-- main js File -->
     <script src="./js/main.js"></script>
