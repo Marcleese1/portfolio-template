@@ -180,3 +180,5 @@
 [0823/232152.365:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0823/232153.639:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0824/001006.048:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0826/003829.049:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[0826/003830.200:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
